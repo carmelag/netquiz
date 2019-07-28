@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Netflix quiz app</title>
+
+    <link rel="stylesheet" type="text/css" href="CSS/quiz.css" />
+  </head>
+  <body>
+    <div class="quiz-main">
+      <div class="quiz-title">Nextflix quiz</div>
+      <div class="quiz-description">
+        <p>This quiz is for Netflix addicted like you!</p>
+        <p>Try to answer the questions and check your final score!</p>
+      </div>
+
+      <div class="quiz-container quiz-container--trivia">
+        <div id="quiz-question"></div>
+
+        <div class="quiz-answers">
+          <button
+            id="quiz-answer-1"
+            class="quiz-answer"
+            onclick="checkAnswer(1)"
+          ></button>
+          <button
+            id="quiz-answer-2"
+            class="quiz-answer"
+            onclick="checkAnswer(2)"
+          ></button>
+          <button
+            id="quiz-answer-3"
+            class="quiz-answer"
+            onclick="checkAnswer(3)"
+          ></button>
+          <button
+            id="quiz-answer-4"
+            class="quiz-answer"
+            onclick="checkAnswer(4)"
+          ></button>
+        </div>
+
+        <div id="quiz-end">
+          <div class="quiz-meme"></div>
+          <div id="quiz-thank-you">
+            Hey! Thanks a lot for taking the quiz! Your total score is
+            <span id="quiz-final-score"></span>/5
+          </div>
+        </div>
+      </div>
+
+      <div id="quiz-solution">
+        The correct answer is<span class="quiz-right-choice"></span>
+      </div>
+
+      <div class="quiz-container quiz-container--buttons">
+        <button
+          class="quiz-button"
+          id="quiz-btn-next"
+          onclick="goToNextQuestion()"
+        >
+          Next!
+        </button>
+        <button class="quiz-button" id="quiz-btn-end" onclick="goToResults()">
+          Go to results!
+        </button>
+      </div>
+    </div>
+    <script type="text/javascript" src="quiz.js"></script>
+  </body>
+</html>

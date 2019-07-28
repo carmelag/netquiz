@@ -1,0 +1,107 @@
+@font-face {
+  font-family: bebas-neue;
+  src: url(../fonts/bebas-neue/BebasNeue.otf);
+}
+
+* {
+  font-family: "Varela", sans-serif;
+}
+
+.quiz-main {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.quiz-title {
+  color: #e50914;
+  font-family: "bebas-neue";
+  font-size: 50px;
+}
+
+.quiz-intro-container {
+  margin: 10px auto;
+  max-width: 800px;
+}
+
+.quiz-meme {
+  background-image: url(../images/netflix-granny.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 150px;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.quiz-description,
+#quiz-question {
+  font-size: 20px;
+}
+
+button.quiz-answer,
+button.quiz-button {
+  font-size: 22px;
+  background-color: #e50914;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "bebas-neue";
+}
+
+.quiz-answers {
+  margin: 30px 30px;
+  color: #221f1f;
+}
+
+.quiz-container--trivia {
+  color: white;
+  border-radius: 10px;
+  background-color: #221f1f;
+  padding: 35px 0;
+  margin: 30px auto;
+  max-width: 800px;
+}
+
+#quiz-solution {
+  visibility: hidden;
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+#quiz-end {
+  color: #e50914;
+  font-size: 18px;
+}
+
+#quiz-btn-end,
+#quiz-end {
+  display: none;
+}
+
+/*Breakpoint desktop*/
+@media screen and (min-width: 1025px) {
+  .quiz-main {
+    margin-top: 5%;
+  }
+
+  .quiz-title {
+    font-size: 70px;
+  }
+
+  .quiz-description,
+  #quiz-question {
+    font-size: 28px;
+  }
+
+  #quiz-solution {
+    font-size: 22px;
+  }
+}

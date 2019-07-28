@@ -1,0 +1,64 @@
+@font-face {
+  font-family: bebas-neue;
+  src: url(fonts/bebas-neue/BebasNeue.otf);
+}
+
+.quiz-main {
+  text-align: center;
+}
+
+.quiz-title {
+  color: #e50914;
+  font-family: "bebas-neue";
+  font-size: 42px;
+}
+
+.quiz-meme {
+}
+
+.quiz-description,
+.quiz-solution,
+.quiz-question {
+  font-family: "Varela", sans-serif;
+  font-size: 28px;
+}
+
+.quiz-question {
+  font-size: 22px;
+}
+
+button.quiz-answer,
+button.quiz-button {
+  font-size: 22px;
+  background-color: #e50914;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: "bebas-neue";
+}
+
+.quiz-answers {
+  margin: 30px 30px;
+  color: #221f1f;
+}
+
+.quiz-container--trivia {
+  color: white;
+  background-color: #221f1f;
+  padding: 35px 0;
+  margin: 30px auto;
+  max-width: 800px;
+}
+
+.quiz-solution,
+#quiz-btn-end,
+.quiz-end {
+  display: none;
+}
