@@ -8,7 +8,7 @@
 }
 
 .quiz-title {
-  color: #e50914;
+  color: yellow;
   font-family: "bebas-neue";
   font-size: 42px;
 }
@@ -29,7 +29,7 @@
 
 button.quiz-answer,
 button.quiz-button {
-  font-size: 22px;
+  font-size: 40px;
   background-color: #e50914;
   border: none;
   color: white;
